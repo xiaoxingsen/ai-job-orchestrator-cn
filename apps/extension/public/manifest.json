@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "AI 求职编排助手（本地版）",
+  "version": "0.1.0",
+  "description": "连接本地工作台，在 Boss、猎聘和智联页面执行经用户授权的岗位采集与投递。",
+  "permissions": ["activeTab", "storage"],
+  "host_permissions": [
+    "http://127.0.0.1:8765/*",
+    "http://localhost:8765/*",
+    "*://*.zhipin.com/*",
+    "*://*.liepin.com/*",
+    "*://*.zhaopin.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "AI 求职编排助手",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.zhipin.com/*",
+        "*://*.liepin.com/*",
+        "*://*.zhaopin.com/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle",
+      "all_frames": false
+    }
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'none'"
+  }
+}
+

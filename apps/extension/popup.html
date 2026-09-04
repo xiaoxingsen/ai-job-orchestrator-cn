@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI 求职编排助手</title>
+    <style>
+      body { width: 320px; margin: 0; padding: 18px; font: 14px/1.5 system-ui, sans-serif; color: #172033; }
+      h1 { margin: 0 0 6px; font-size: 18px; }
+      p { margin: 6px 0 14px; color: #5d6678; }
+      input { box-sizing: border-box; width: 100%; padding: 10px; border: 1px solid #cfd5df; border-radius: 8px; }
+      button { width: 100%; margin-top: 10px; padding: 10px; border: 0; border-radius: 8px; background: #1565d8; color: white; cursor: pointer; }
+      #status { min-height: 22px; margin-top: 10px; color: #27613f; }
+    </style>
+  </head>
+  <body>
+    <h1>连接本地工作台</h1>
+    <p>在工作台生成一次性配对令牌。插件不会读取或上传招聘网站 Cookie。</p>
+    <input id="token" type="password" autocomplete="off" placeholder="粘贴一次性配对令牌" />
+    <button id="pair" type="button">配对</button>
+    <div id="status" role="status"></div>
+    <script src="popup.js"></script>
+  </body>
+</html>
+

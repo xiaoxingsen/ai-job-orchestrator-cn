@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "selectorVersion": "2026.08.18",
+  "platform": "boss",
+  "selectors": {
+    "listingCard": ".job-card-wrapper, li.job-card-wrapper, [data-job-card]",
+    "listingLink": "a.job-card-left, a[href*='job_detail'], [data-job-link]",
+    "title": ".job-name, .job-card-body .job-name, [data-title]",
+    "company": ".company-name, .company-info .company-name, [data-company]",
+    "description": ".job-detail-section .job-sec-text, .job-detail-body, [data-description]",
+    "salary": ".salary, .job-salary, [data-salary]",
+    "location": ".job-location, .location-address, [data-location]",
+    "experience": ".job-info .tag-list li:nth-child(1), [data-experience]",
+    "education": ".job-info .tag-list li:nth-child(2), [data-education]",
+    "hrActivity": ".boss-active-time, .job-boss-info .active-time, [data-hr-active]",
+    "captcha": ".geetest_panel, #captcha, [data-captcha]",
+    "riskPage": ".security-check, .risk-warning, [data-risk]",
+    "loginRequired": ".login-dialog, .login-page, [data-login]",
+    "contactButton": ".btn-startchat, .btn-container .btn",
+    "greetingInput": "textarea.chat-input, .chat-editor textarea, [data-greeting]",
+    "submitButton": ".btn-send, .chat-send, [data-submit]",
+    "attachmentInput": "input[type='file'][accept*='.pdf'], input[type='file'], [data-attachment]",
+    "successMarker": ".chat-conversation, .message-item.is-self, [data-submitted]"
+  }
+}
+

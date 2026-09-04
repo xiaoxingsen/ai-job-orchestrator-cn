@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "selectorVersion": "2026.08.18",
+  "platform": "zhilian",
+  "selectors": {
+    "listingCard": ".joblist-box__item, .positionlist__item, [data-job-card]",
+    "listingLink": "a[href*='/jobdetail/'], .iteminfo__line1__jobname a, [data-job-link]",
+    "title": ".iteminfo__line1__jobname, .job-name, [data-title]",
+    "company": ".iteminfo__line1__compname, .company-name, [data-company]",
+    "description": ".describtion, .job-detail__description, [data-description]",
+    "salary": ".iteminfo__line2__jobdesc__salary, .salary, [data-salary]",
+    "location": ".job-address, .iteminfo__line2__jobdesc__demand span:nth-child(1), [data-location]",
+    "experience": ".iteminfo__line2__jobdesc__demand span:nth-child(2), [data-experience]",
+    "education": ".iteminfo__line2__jobdesc__demand span:nth-child(3), [data-education]",
+    "hrActivity": ".hr-active, .companyinfo__status, [data-hr-active]",
+    "captcha": ".captcha-box, .verify-slider, [data-captcha]",
+    "riskPage": ".risk-page, .security-page, [data-risk]",
+    "loginRequired": ".login-modal, .login-wrapper, [data-login]",
+    "contactButton": ".apply-btn, .im-btn",
+    "greetingInput": "textarea.chat-input, .im-editor textarea, [data-greeting]",
+    "submitButton": ".send-btn, .im-send-button, [data-submit]",
+    "attachmentInput": "input[type='file'], [data-attachment]",
+    "successMarker": ".message-self, .apply-success, [data-submitted]"
+  }
+}
+

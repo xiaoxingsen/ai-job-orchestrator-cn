@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "selectorVersion": "2026.08.18",
+  "platform": "liepin",
+  "selectors": {
+    "listingCard": ".job-card-pc-container, .job-list-item, [data-job-card]",
+    "listingLink": "a[href*='/job/'], .job-title-box a, [data-job-link]",
+    "title": ".job-title-box, .job-title, [data-title]",
+    "company": ".company-name, .company-title, [data-company]",
+    "description": ".job-intro-container, .job-description, [data-description]",
+    "salary": ".job-salary, .salary, [data-salary]",
+    "location": ".job-dq-box, .job-area, [data-location]",
+    "experience": ".job-labels-box span:nth-child(1), [data-experience]",
+    "education": ".job-labels-box span:nth-child(2), [data-education]",
+    "hrActivity": ".recruiter-active, .active-time, [data-hr-active]",
+    "captcha": ".geetest_panel, .captcha-container, [data-captcha]",
+    "riskPage": ".risk-control-page, .security-verify, [data-risk]",
+    "loginRequired": ".login-modal, .login-register, [data-login]",
+    "contactButton": ".btn-apply, .communicate-btn",
+    "greetingInput": "textarea.im-input, .chat-input textarea, [data-greeting]",
+    "submitButton": ".im-send, .send-btn, [data-submit]",
+    "attachmentInput": "input[type='file'], [data-attachment]",
+    "successMarker": ".im-message-self, .delivery-success, [data-submitted]"
+  }
+}
+
